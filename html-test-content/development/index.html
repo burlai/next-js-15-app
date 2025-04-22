@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Services - My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #4a6cf7;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .page-header {
+            background-color: #2a4cd7;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .services {
+            padding: 4rem 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 5px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-stack {
+            background-color: #f5f5f5;
+            padding: 4rem 0;
+        }
+
+        .tech-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 2rem;
+        }
+
+        .tech-icon {
+            background: white;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects {
+            padding: 4rem 0;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .cta {
+            background-color: #4a6cf7;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            margin-top: 2rem;
+        }
+
+        button {
+            background-color: white;
+            color: #4a6cf7;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page-header">
+        <div class="container">
+            <h1>Development Services</h1>
+            <p>Building robust, scalable, and innovative digital solutions</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Development Expertise</h2>
+            <p>We deliver cutting-edge development solutions tailored to meet your specific business needs.</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Web Application Development</h3>
+                    <p>Custom web applications built with modern frameworks and technologies that deliver exceptional
+                        user experiences and solve complex business challenges.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile applications that provide seamless experiences across iOS and
+                        Android devices, reaching your audience wherever they are.</p>
+                </div>
+                <div class="service-card">
+                    <h3>API Development & Integration</h3>
+                    <p>Robust API development and integration services that connect your systems, streamline operations,
+                        and enable efficient data exchange between platforms.</p>
+                </div>
+                <div class="service-card">
+                    <h3>DevOps & Cloud Solutions</h3>
+                    <p>Streamlined development operations and cloud-based infrastructure that optimize performance,
+                        scalability, and security for your applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Our Technology Stack</h2>
+            <p>We use the latest and most reliable technologies to build powerful digital solutions.</p>
+
+            <div class="tech-icons">
+                <div class="tech-icon">React</div>
+                <div class="tech-icon">Node.js</div>
+                <div class="tech-icon">Python</div>
+                <div class="tech-icon">AWS</div>
+                <div class="tech-icon">Docker</div>
+                <div class="tech-icon">MongoDB</div>
+                <div class="tech-icon">TypeScript</div>
+                <div class="tech-icon">GraphQL</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Featured Development Projects</h2>
+            <p>Explore some of our recent success stories.</p>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">Project Image</div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A scalable e-commerce solution built with microservices architecture, supporting millions of
+                            products and transactions.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Project Image</div>
+                    <div class="project-info">
+                        <h3>Healthcare Management System</h3>
+                        <p>A comprehensive platform for healthcare providers to manage patient records, appointments,
+                            and billing securely and efficiently.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Project Image</div>
+                    <div class="project-info">
+                        <h3>Real-time Analytics Dashboard</h3>
+                        <p>A powerful visualization tool that processes and displays real-time data to help businesses
+                            make informed decisions quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Build Your Next Digital Solution?</h2>
+            <p>Our development team is ready to turn your ideas into reality.</p>
+            <button>Schedule a Consultation</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
