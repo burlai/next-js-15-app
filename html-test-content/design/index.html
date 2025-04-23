@@ -220,9 +220,25 @@
             padding: 2rem 0;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Design page loaded script for navigation');
+            document.body.addEventListener('click', (event) => {
+                const link = event.target.closest('a[href]');
+                if (!link) return;
+                const href = link.getAttribute('href');
+                const isRelative = href && !href.startsWith('http') && !href.startsWith('#');
+
+                if (isRelative) {
+                    event.preventDefault();
+                    window.parent.postMessage({ type: 'navigate', href }, '*');
+                }
+            });
+        });
+    </script>
 </head>
 
-<body>
+<body style="border: 3px solid blue;">
     <section class="page-header">
         <div class="container">
             <h1>Design Services</h1>
@@ -233,6 +249,9 @@
     <section>
         <h1>Link to the Development index.html page:</h1>
         <p><a href="/development/index.html">Development</a></p>
+
+        <h1>Link to the Development sample-app.html page: </h1>
+        <p><a href="../development/sample-app.html">Development sample-app</a></p>
     </section>
 
     <section class="intro">
