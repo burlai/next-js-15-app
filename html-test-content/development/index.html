@@ -163,7 +163,7 @@
                 const link = event.target.closest('a[href]');
                 if (!link) return;
                 const href = link.getAttribute('href');
-                const isRelative = href && !href.startsWith('http') && !href.startsWith('#');
+                const isRelative = href && !href.startsWith('http') && !href.startsWith('https') && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:');
 
                 if (isRelative) {
                     event.preventDefault();
